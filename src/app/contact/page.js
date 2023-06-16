@@ -1,7 +1,7 @@
+import { SVGComponent, ArrowDown } from "../../components/ui/logo";
+import { outfit, poppins } from "../../utils/font";
 import Link from "next/link";
-import { SVGComponent, ArrowDown } from "../components/ui/logo";
-import Hero from "../components/layout/Hero";
-import { outfit, poppins } from "../utils/font";
+import HeroContact from "../../components/layout/HeroContact";
 import { Toaster } from "react-hot-toast";
 
 export default function Home() {
@@ -33,7 +33,7 @@ export default function Home() {
             </Link>
           </div>
           <div id="hero">
-            <Hero />
+            <HeroContact />
           </div>
           <p
             className={`flex justify-center ${outfit.className} my-5 lg:my-3 font-normal`}
