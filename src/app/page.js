@@ -14,12 +14,12 @@ export default function Home() {
         </div>
         <div className="text-center">
           <p
-            className={`${poppins.className} font-light text-[20px] max-w-xl mx-auto`}
+            className={`${poppins.className} font-light hidden lg:block lg:text-[20px] max-w-xl mx-auto`}
           >
             The future of strategy and digital product delivery.
           </p>
           <p
-            className={`${poppins.className} font-light text-[20px] max-w-xl mx-auto`}
+            className={`${poppins.className} font-light text-[14px] lg:text-[20px] max-w-xl mx-auto`}
           >
             <span className="block">Our unique AI-powered approach</span>{" "}
             delivers unmatched efficiency and cost savings.
@@ -36,7 +36,7 @@ export default function Home() {
             <Hero />
           </div>
           <p
-            className={`flex justify-center ${outfit.className} py-3 font-normal`}
+            className={`flex justify-center ${outfit.className} my-5 lg:my-3 font-normal`}
           >
             © 2023 — Privacy Policy. NexaLabs
           </p>

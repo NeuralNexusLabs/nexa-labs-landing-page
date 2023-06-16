@@ -1,8 +1,7 @@
 import * as React from "react";
 export const SVGComponent = (props) => (
   <svg
-    width={300}
-    height={200}
+    className="w-[200px] h-[100px] lg:w-[300px] lg:h-[200px]"
     viewBox="0 0 697 198"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"

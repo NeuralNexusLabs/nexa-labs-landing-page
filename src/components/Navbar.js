@@ -29,7 +29,7 @@ export default function Navbar() {
           About
         </div>
       </ul>
-      <ul className="flex items-center gap-10 mr-4">
+      <ul className="hidden lg:flex items-center gap-10 mr-4">
         <BsFacebook className="text-white text-xl hover:text-blue-500 transition-all duration-300 ease-in-out cursor-pointer" />
         <BsInstagram className="text-white text-xl hover:text-blue-500 transition-all duration-300 ease-in-out cursor-pointer" />
         <BsLinkedin className="text-white text-xl hover:text-blue-500 transition-all duration-300 ease-in-out cursor-pointer" />
