@@ -1,5 +1,5 @@
 import React from "react";
-import { outfit } from "../utils/font";
+import { poppins } from "../utils/font";
 import {
   BsFacebook,
   BsInstagram,
@@ -12,7 +12,7 @@ import Link from "next/link";
 export default function Navbar() {
   return (
     <div
-      className={`w-full ${outfit.className} flex justify-between rounded-t-md items-center bg-black text-white `}
+      className={`w-full ${poppins.className} flex justify-between rounded-t-md items-center bg-black text-white `}
     >
       <ul className="flex items-center text-lg overflow-hidden">
         <Link href="/">
@@ -30,11 +30,11 @@ export default function Navbar() {
         </div>
       </ul>
       <ul className="flex items-center gap-10 mr-4">
-        <BsFacebook className="text-white text-xl hover:text-blue-500 transition-all duration-300 ease-in-out" />
-        <BsInstagram className="text-white text-xl hover:text-blue-500 transition-all duration-300 ease-in-out" />
-        <BsLinkedin className="text-white text-xl hover:text-blue-500 transition-all duration-300 ease-in-out" />
-        <BsTwitter className="text-white text-xl hover:text-blue-500 transition-all duration-300 ease-in-out" />
-        <BsGithub className="text-white text-xl hover:text-blue-500 transition-all duration-300 ease-in-out" />
+        <BsFacebook className="text-white text-xl hover:text-blue-500 transition-all duration-300 ease-in-out cursor-pointer" />
+        <BsInstagram className="text-white text-xl hover:text-blue-500 transition-all duration-300 ease-in-out cursor-pointer" />
+        <BsLinkedin className="text-white text-xl hover:text-blue-500 transition-all duration-300 ease-in-out cursor-pointer" />
+        <BsTwitter className="text-white text-xl hover:text-blue-500 transition-all duration-300 ease-in-out cursor-pointer" />
+        <BsGithub className="text-white text-xl hover:text-blue-500 transition-all duration-300 ease-in-out cursor-pointer" />
       </ul>
     </div>
   );

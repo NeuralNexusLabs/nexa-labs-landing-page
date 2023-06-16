@@ -1,20 +1,14 @@
-import Image from "next/image";
-
 import Link from "next/link";
-import { SVGComponent, ArrowDown } from "./components/ui/logo";
-import Hero from "./components/Hero";
-import { poppins } from "./utils/font";
+import { SVGComponent, ArrowDown } from "../components/ui/logo";
+import Hero from "../components/layout/Hero";
+import { outfit, poppins } from "../utils/font";
+import { Toaster } from "react-hot-toast";
 
 export default function Home() {
   return (
     <>
+      <Toaster />
       <div className="flex flex-col justify-center">
-        {/* <Image
-          src={"/rotated.png"}
-          alt="bg"
-          layout="fill"
-          className="hidden lg:block -z-10 text-center"
-        /> */}
         <div className="flex justify-center my-6">
           <SVGComponent />
         </div>
@@ -31,13 +25,21 @@ export default function Home() {
             delivers unmatched efficiency and cost savings.
           </p>
           <div className="flex justify-center my-5">
-            <Link href={"#hero"} className="scroll-smooth	">
+            <Link
+              href={"#hero"}
+              className="scroll-smooth transition duration-300 transform hover:-translate-y-2 hover:scale-90"
+            >
               <ArrowDown />
             </Link>
           </div>
           <div id="hero">
             <Hero />
           </div>
+          <p
+            className={`flex justify-center ${outfit.className} py-3 font-normal`}
+          >
+            © 2023 — Privacy Policy. NexaLabs
+          </p>
         </div>
       </div>
     </>

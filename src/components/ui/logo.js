@@ -107,10 +107,10 @@ export const ArrowDown = () => (
     viewBox="0 0 24 24"
     fill="none"
     stroke="currentColor"
-    stroke-width="1"
-    stroke-linecap="round"
-    stroke-linejoin="round"
-    class="lucide lucide-arrow-down-circle"
+    strokeWidth="1"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    className="lucide lucide-arrow-down-circle"
   >
     <circle cx="12" cy="12" r="10" />
     <polyline points="8 12 12 16 16 12" />

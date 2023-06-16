@@ -37,3 +37,7 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.gradient2{
+  background-image: linear-gradient(to right, #000002, #02030b, #030613, #040918, #030c1d, #051225, #05172d, #021b35, #022343, #012b51, #013360, #003c6f);
+}

@@ -19,7 +19,7 @@ export default function Product() {
         ))}
       </div>
       <div className="border-r-2 border-gray-200"></div>
-      <div className="flex flex-col justify-center mt-3">
+      <div className="flex flex-col justify-center mt-3 mb-10">
         <h1 className="text-start text-3xl font-light border-b-2 border-gray-200 pb-2">
           App Design <br /> & Dev
         </h1>
