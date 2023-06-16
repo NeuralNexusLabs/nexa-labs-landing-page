@@ -20,10 +20,10 @@ export default function ContactForm() {
 
     emailjs
       .sendForm(
-        "service_ottbk6c",
-        "template_ujdwa8g",
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
         form.current,
-        "IbjdJH9G8t82Qps09",
+        process.env.NEXT_PUBLIC_EMAILJS_USER_ID,
         setLoading(true)
       )
       .then(
