@@ -16,12 +16,24 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+  background-color: black;
+}
+
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,54,102,1) 100%);
+  background-image: radial-gradient(circle, #000002, #02030b, #030613, #040918, #030c1d, #051225, #05172d, #021b35, #022343, #012b51, #013360, #003c6f);
+  /* background-image: linear-gradient(to right, #000002, #02030b, #030613, #040918, #030c1d, #051225, #05172d, #021b35, #022343, #012b51, #013360, #003c6f); */
+}
+.gradient {
+  /* background: #69B4FF;
+  background: linear-gradient(to right, #69B4FF 82%, #CAC8D1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+  background: #69B4FF;
+  background: linear-gradient(to right, #69B4FF 40%, #CAC8D1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
